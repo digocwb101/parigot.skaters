@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parigot Skaters</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header>
+    <h1>Parigot Skaters</h1>
+  </header>
+  <main>
+    <section>
+      <input type="text" placeholder="Pesquise aqui" id="campo-pesquisa">
+      <button onclick="pesquisar()">Pesquisar</button>
+    </section>
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+    </section>
+  </main>
+  <script>
+    const campoPesquisa = document.getElementById('campo-pesquisa');
+
+    campoPesquisa.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter') {
+        pesquisar();
+      }
+    });
+  </script>
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+<footer>
+<P>2024 - Parigot Skaters - site colaborativo. </P>
+ <p>Feito por Rodrigo Oliveira - rodrigosantos.oliveira@gmail.com</p>
+ <p>Since 2010</p>
+</footer>
+</html>
